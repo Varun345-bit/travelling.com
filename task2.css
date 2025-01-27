@@ -1,0 +1,115 @@
+
+  
+  .image-container {
+    display:flex inline;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd; 
+    margin-bottom: 3px; 
+    transition:transform 1s ease;
+    transform: scale(1) rotate(45degree);
+
+  }
+  
+  .round-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+  }
+  
+  .img-display{
+    width: 500px;
+    height: 300px;
+    box-shadow:2px 2px rgba(9, 38, 132, 0.51);
+    transition:all 1s ease-in-out;
+  }
+  h3 {
+    text-align: center; /* Ensure titles are centered */
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 10px;
+    color: #555;
+    margin-top: 5px; 
+  }
+  
+  .row h2 {
+    font-size: 50px;
+  }
+  
+  .row p {
+    font-size: 30px;
+  }
+  
+  .row button:hover {
+    background-color: rgb(34, 96, 144);
+    color: #ddd;
+  }
+  .image-container:hover{
+    box-shadow: 4px 4px 4px rgba(17, 28, 63, 0.742);
+    transform:scale(120%) rotate(360deg);;
+   
+  }
+
+
+  
+
+    .img-display:hover{
+        box-shadow:4px 4px rgb(49, 88, 220),8px 8px rgba(49, 89, 220, 0.636),12px 12px rgba(49, 169, 220, 0.614);
+        transform:rotate(180deg);
+        transform:skew(45deg);
+        transform:scale(120%);
+       
+     
+    }
+  /* Media Query for Mobile (max-width: 767px) */
+  @media (max-width: 767px) {
+    .img-container {
+      grid-template-columns: repeat(1,1fr); /* Stack images on small screens */
+    }
+  
+    h2 {
+      font-size: 24px; /* Smaller font size for mobile */
+    }
+  
+    p {
+      font-size: 14px; /* Adjust text size on small screens */
+    }
+  
+    .col-md-5 {
+      padding: 0px;
+    }
+  }
+  
+  /* For Large Screens (Tablets/Desktops - min-width: 768px) */
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 30px; /* Larger font size for tablets and desktops */
+    }
+  
+    p {
+      font-size: 18px; /* Bigger text on larger screens */
+    }
+  
+    .col-md-5 {
+      padding-left: 0%; /* Remove padding for consistent layout */
+    }
+  }
+  
+
+  /* transition:all 1s ease-in-out;
+}
+.box:hover{
+   transform:rotate(180deg);
+   transform:skew(45deg);
+   transform:scale(120%);
+   transform:translateX(200px);
+   transform:translateY(200px);
+   transform:translate(200px,200px);
+} */
